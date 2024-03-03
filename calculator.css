@@ -1,0 +1,59 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("https://wallpapers.com/images/hd/red-and-blue-calculators-yxm0myfzuym67431.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  max-width: 400px;
+  width: 150%;
+  border-radius: 20px;
+  padding: 30px 30px 70px;
+  box-shadow: 0 10px 15px white;
+  background-color: transparent;
+
+}
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color:black;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  color:black;
+}
+.buttons button {
+  padding: 20px;
+  border-radius: 75px;
+  font-size: 20px;
+  cursor: pointer;
+  
+  opacity:0.75;
+
+  border: 1px solid transparent;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator {
+  color: black;
+}
